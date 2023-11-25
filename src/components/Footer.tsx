@@ -1,5 +1,5 @@
 
-import styled from 'styled-components';
+import styled from "@emotion/styled";
 
 const FooterContainer = styled.footer`
   background-color: #333;
