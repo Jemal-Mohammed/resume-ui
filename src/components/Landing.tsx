@@ -108,7 +108,7 @@ const Landing:React.FC = () => {
     // Simulate a delay (e.g., 3000 milliseconds or 3 seconds)
     setTimeout(() => {
       setShowLoader(false); // Hide loader after the delay
-    }, 30000);
+    }, 12000);
   };
 
   return (
