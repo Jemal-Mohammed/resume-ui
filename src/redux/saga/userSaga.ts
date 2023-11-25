@@ -11,7 +11,7 @@ export interface User {
 function* register(action:PayloadAction<User>) {
     try {
       
-        const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-kwcs.onrender.com/register', action.payload,{
+        const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-8dkx.onrender.com/register', action.payload,{
           withCredentials: true,
           headers: {
             "Content-Type": "application/json",
@@ -26,7 +26,7 @@ function* register(action:PayloadAction<User>) {
 }
 function* login(action: PayloadAction<LoginUser>) {
   try {
-    const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-kwcs.onrender.com/login', action.payload, {
+    const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-8dkx.onrender.com/login', action.payload, {
       withCredentials: true,
           headers: {
             "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function* login(action: PayloadAction<LoginUser>) {
 
 function* logout() {
   try {
-    const response: AxiosResponse = yield call(axios.get, 'https://resume-builder-kwcs.onrender.com/logout',{
+    const response: AxiosResponse = yield call(axios.get, 'https://resume-builder-8dkx.onrender.com/logout',{
       withCredentials: true,
           headers: {
             "Content-Type": "application/json",

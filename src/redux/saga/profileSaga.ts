@@ -45,7 +45,7 @@ function* completeProfile(action: PayloadAction<Profile>) {
 
     // Now, you can use formData to send the request
 
-    const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-kwcs.onrender.com/complete-profile', formData, {
+    const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-8dkx.onrender.com/complete-profile', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
@@ -59,7 +59,7 @@ function* completeProfile(action: PayloadAction<Profile>) {
 }
 function* download() {
   try {
-    const response: AxiosResponse<Blob> = yield call(axios.get, 'https://resume-builder-kwcs.onrender.com/download', {
+    const response: AxiosResponse<Blob> = yield call(axios.get, 'https://resume-builder-8dkx.onrender.com/download', {
       responseType: 'blob',
       withCredentials: true,
     });
