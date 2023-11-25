@@ -7,7 +7,6 @@ import {  registerStart } from '../redux/slices/userSlice';
 import { RootState } from '../redux/store';
 import {toast } from "react-toastify"
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 // Styled components for styling
 const RegisterContainer = styled.div`
   background-color: #fff;
