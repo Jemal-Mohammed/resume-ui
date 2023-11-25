@@ -1,5 +1,5 @@
 import { all } from 'redux-saga/effects';
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from 'redux-saga';
 import userReducer from "./slices/userSlice";
 import profileReducer from "./slices/profileSlice"
