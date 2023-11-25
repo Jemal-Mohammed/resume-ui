@@ -31,7 +31,7 @@ const StyledImages = styled.img`
     opacity:0.5;
   }
 `;
-const Templates = () => {
+const Templates:React.FC = () => {
   return (
     <>
     <Title>TEMPLATES</Title>

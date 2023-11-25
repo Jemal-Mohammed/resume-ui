@@ -28,7 +28,7 @@ const Overlay = styled.div`
   z-index: 9999;
 `;
 
-const Downloading = () => {
+const Downloading:React.FC = () => {
   return (
     <Overlay>
       <Spinner />

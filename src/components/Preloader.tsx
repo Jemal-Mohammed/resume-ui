@@ -23,7 +23,7 @@ const Spinner = styled.div`
   animation: ${spin} 0.8s linear infinite;
 `;
 
-const Preloader = () => {
+const Preloader:React.FC = () => {
   return (
     <PreloaderWrapper>
       <Spinner />

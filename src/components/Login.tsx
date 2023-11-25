@@ -79,7 +79,7 @@ padding:30px;
 const ErrorMessage=styled.p`
 color:red;
 `;
-export const Login = () => {
+export const Login:React.FC = () => {
   const dispatch = useDispatch();
   const navigate=useNavigate();
   // const [isValidEmail, setIsValidEmail] = useState(true);

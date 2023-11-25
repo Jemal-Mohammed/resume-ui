@@ -8,7 +8,7 @@ const FooterContainer = styled.footer`
   text-align: center;
 `;
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <FooterContainer>
       <p>&copy; 2023 Your Company. All rights reserved.</p>

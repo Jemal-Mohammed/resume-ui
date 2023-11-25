@@ -49,7 +49,7 @@ const BuildButton = styled(Link)`
     font-size:15px;
   }
 `;
-const Navbar = () => {
+const Navbar:React.FC = () => {
   const dispatch = useDispatch();
   const message = useSelector((state: RootState) => state.user.message);
   // const error = useSelector((state: RootState) => state.user.error);

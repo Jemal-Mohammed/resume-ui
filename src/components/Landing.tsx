@@ -63,7 +63,7 @@ const DownloadButton=styled.button`
 `;
 // ... (import statements)
 
-const Landing = () => {
+const Landing:React.FC = () => {
   const [showLoader, setShowLoader] = useState(false);
   const message = useSelector((state: RootState) => state.profile.message);
   const error1 = useSelector((state: RootState) => state.profile.error);

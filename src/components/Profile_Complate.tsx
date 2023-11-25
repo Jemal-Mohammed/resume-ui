@@ -67,7 +67,7 @@ padding:5px;
 
 
 // Register component
-export const Profile_Complate = () => {
+export const Profile_Complate:React.FC = () => {
   const dispatch = useDispatch();
   const navigate=useNavigate();
   const error1=useSelector((state:RootState)=>state.profile.error)
