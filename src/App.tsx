@@ -5,7 +5,7 @@ import { Login } from "./components/Login";
 import { Register } from "./components/Register";
 import Footer from "./components/Footer";
 import { Profile_Complate } from "./components/Profile_Complate";
-import axios from "axios";
+// import axios from "axios";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from "react-redux";
@@ -14,7 +14,7 @@ import Preloader from "./components/Preloader";
 import { RootState } from "./redux/store";
 import ProtectedPage from "./protectedPage/ProtectedPage";
 
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
 
 function App() {
   const dispatch = useDispatch();
