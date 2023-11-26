@@ -31,7 +31,7 @@ const Overlay = styled.div`
 const Downloading:React.FC = () => {
   return (
     <Overlay>
-      <Spinner />
+      <Spinner /><h1 style={{color:"red"}}>DOWNLOADING...</h1>
     </Overlay>
   );
 };
