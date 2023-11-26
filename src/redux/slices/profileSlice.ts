@@ -8,13 +8,13 @@ export interface Profile {
   certification: string;
   experience:string;
   skills:string;
-  personal_interests:string;
-  online_profiles:string;
+  personalIntersets:string;
+  onlineProfiles:string;
   references:string;
   education:string;
   language:string,
   courses:string
-  birth_date:Date;
+  birthDate:Date;
   gender:string;
   file:File |null;
 }
@@ -48,7 +48,7 @@ export const profileSlice = createSlice({
         state.loading = false;
         state.error="";
         state.profile =  action.payload;
-        state.message="You have registered Successfully";
+        state.message="You have completed your profile Successfully";
         
       },
       profileCompleteFailure(state, action: PayloadAction<string>) {

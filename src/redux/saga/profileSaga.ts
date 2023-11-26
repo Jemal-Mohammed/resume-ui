@@ -9,13 +9,13 @@ export interface Profile {
   certification: string;
   exprience: string;
   skills: string;
-  personal_interests: string;
-  online_profiles: string;
+  personalIntersets: string;
+  onlineProfiles: string;
   reference: string;
   education: string;
   language: string,
   courses: string
-  birth_date: Date;
+  birthDate: Date;
   gender: string;
   file: File | null;
 }
@@ -44,6 +44,7 @@ function* completeProfile(action: PayloadAction<Profile>) {
     }
 
     // Now, you can use formData to send the request
+// console.log(action.payload);
 
     const response: AxiosResponse = yield call(axios.post, 'https://resume-builder-8dkx.onrender.com/complete-profile', formData, {
       headers: {
@@ -53,8 +54,8 @@ function* completeProfile(action: PayloadAction<Profile>) {
 
     yield put(profileCompleteSuccess(response.data));
   } catch (error: any) {
-    console.error('postUserSaga - Error:', error.response.data);
-    yield put(profileCompleteFailure(error.response.data));
+    console.error('postUserSaga - Error:', error);
+    yield put(profileCompleteFailure(error.response.data.message));
   }
 }
 function* download() {

@@ -103,6 +103,7 @@ export const Register:React.FC = () => {
   const [error,setError]=useState({nameError:'',emailError:'',passwordError:''});
   const error1=useSelector((state:RootState)=>state.user.error)
   const message=useSelector((state:RootState)=>state.user.message)
+  const user1=useSelector((state:RootState)=>state.user)
    
    const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -134,7 +135,7 @@ export const Register:React.FC = () => {
 
     // Dispatch the registration action
     dispatch(registerStart(user));
-    if(message){
+    if(user1){
       toast(message, {
         position: 'bottom-right',
         autoClose: 5000,

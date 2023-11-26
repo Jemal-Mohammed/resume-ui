@@ -20,8 +20,8 @@ function* register(action:PayloadAction<User>) {
         });
         yield put(registerSuccess(response.data));
       } catch (error: any) {
-        console.error('postUserSaga - Error:', error.response.data.message);
-        yield put(registergFailure(error.response.data.message));
+        console.error('postUserSaga - Error:', error.response.data);
+        yield put(registergFailure(error.response.data));
       }
 }
 function* login(action: PayloadAction<LoginUser>) {
@@ -35,8 +35,8 @@ function* login(action: PayloadAction<LoginUser>) {
     });
     yield put(loginSuccess(response.data));
   } catch (error: any) {
-    console.error('postUserSaga - Error:', error.response.data.message);
-    yield put(loginFailer(error.response.data.message));
+    console.error('postUserSaga - Error:', error.response.data.error);
+    yield put(loginFailer(error.response.data.error));
   }
 }
 

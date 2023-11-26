@@ -79,13 +79,13 @@ export const Profile_Complate:React.FC = () => {
     certification: "",
     experience: "",
     skills: "",
-    personal_interests:"",
-    online_profiles: "",
+    personalIntersets:"",
+    onlineProfiles: "",
     references: "",
     education: "",
     language: "",
     courses: "",
-    birth_date: new Date("2022-05-04"),
+    birthDate: new Date("2022-05-04"),
     gender: "male",
     file:null
   })
@@ -180,11 +180,11 @@ export const Profile_Complate:React.FC = () => {
             <textarea value={data.skills}
               onChange={(e) => setData({ ...data, skills: e.target.value })} placeholder='write your skills'></textarea>
             <label htmlFor="text">personal Intersts</label>
-            <textarea value={data.personal_interests}
-              onChange={(e) => setData({ ...data, personal_interests: e.target.value })} placeholder='write your intersets'></textarea>
+            <textarea value={data.personalIntersets}
+              onChange={(e) => setData({ ...data, personalIntersets: e.target.value })} placeholder='write your intersets'></textarea>
             <label htmlFor="text">Online Profiles</label>
-            <textarea value={data.online_profiles}
-              onChange={(e) => setData({ ...data, online_profiles: e.target.value })} placeholder='write your profiles'></textarea>
+            <textarea value={data.onlineProfiles}
+              onChange={(e) => setData({ ...data, onlineProfiles: e.target.value })} placeholder='write your profiles'></textarea>
             <label htmlFor="text">Rferences</label>
             <textarea value={data.references}
               onChange={(e) => setData({ ...data, references: e.target.value })} placeholder='write your references'></textarea>
@@ -199,8 +199,8 @@ export const Profile_Complate:React.FC = () => {
               onChange={(e) => setData({ ...data, courses: e.target.value })} placeholder='write courses'></textarea>
             <label htmlFor="text">Birth Date</label>
             <input
-              value={data.birth_date ? formatDateForInput(data.birth_date) : ''}
-              onChange={(e) => setData({ ...data, birth_date: new Date(e.target.value) })}
+              value={data.birthDate ? formatDateForInput(data.birthDate) : ''}
+              onChange={(e) => setData({ ...data, birthDate: new Date(e.target.value) })}
               type="date"
               name=""
               id=""

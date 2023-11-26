@@ -59,6 +59,7 @@ export const userSlice = createSlice({
         console.log(action.payload);
         state.loading = true;
         state.loginUser =  action.payload;
+        state.message=null
       },
       loginSuccess: (state, action: PayloadAction<LoginUser>) => {
         console.log(action.payload);
@@ -80,7 +81,7 @@ export const userSlice = createSlice({
       state.error = action.payload;
     },
     logoutStart: (state) => {
-      state.loading=true;
+      state.loading=true;state.message=null
       // console.log(action.payload);
         // return{
         //     ...state,

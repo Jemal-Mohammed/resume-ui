@@ -86,7 +86,7 @@ export const Login:React.FC = () => {
   const [user, setUser] = useState({ email: '', password: '' });
   const [error,setError]=useState({ emailError:'',passwordError:''});
   const message=useSelector((state:RootState)=>state.user.message);
-  const logenUser=useSelector((state:RootState)=>state.user);
+  // const logenUser=useSelector((state:RootState)=>state.user);
   const error1=useSelector((state:RootState)=>state.user.error);
 
   // console.log(message);
@@ -113,7 +113,7 @@ export const Login:React.FC = () => {
     setError({ ...error, passwordError: '' });
     // Dispatch the registration action
     dispatch(loginStart(user));
-if(logenUser){
+if(message){
   toast(message, {
     position: 'bottom-left',
     autoClose: 5000,

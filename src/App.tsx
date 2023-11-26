@@ -13,8 +13,8 @@ import { fetchStart } from "./redux/slices/userSlice";
 import Preloader from "./components/Preloader";
 import { RootState } from "./redux/store";
 import ProtectedPage from "./protectedPage/ProtectedPage";
-
-// axios.defaults.withCredentials = true;
+import axios from "axios";
+axios.defaults.withCredentials = true;
 
 function App() {
   const dispatch = useDispatch();
